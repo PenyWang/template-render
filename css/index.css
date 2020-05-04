@@ -1,0 +1,137 @@
+body{
+  margin: 0;
+  font: 12px/1.5 "Hiraaino Sans GB","Microsoft Yahei",arial,\5b8b\4f53,"Helvetica Neue", Helvetica,STHEITI,sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li{
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  list-style: none;
+}
+
+ul,
+li,
+div{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+
+img{
+  width: 100%;
+}
+
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.cover {
+  min-width: 1200px;
+}
+
+.student-album {
+  width: 1200px;
+  margin: 80px auto;
+}
+
+.student-album .album-title {
+  height: 100px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.student-album .album-title h1{
+  position: relative;
+  height: 65px;
+  font-size: 35px;
+  color: #000;
+  font-family: 'fzzzh';
+}
+
+.student-album .album-title h1::before,
+.student-album .album-title h1::after{
+  content: "";
+  position: absolute;
+  top: 25px;
+  width: 50px;
+  height: 2px;
+  background-color: #000;
+}
+
+.student-album .album-title h1::before{
+  left: 310px;
+}
+
+.student-album .album-title h1::after{
+  right: 310px;
+}
+
+.student-album .album-title p{
+  font-size: 20px;
+}
+
+/* .student-album .album-wrap {
+  border: 1px solid red;
+}
+
+.student-album .list {
+  width: 1300px;
+  border: 1px solid;
+} */
+
+.student-album .list-item{
+  position: relative;
+  float: left;
+  margin: 30px 30px 0 0 ;
+  width: 216px;
+  height: 216px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  overflow: hidden;
+}
+
+.student-album .list-item:nth-child(5),
+.student-album .list-item:nth-child(10){
+  margin-right: 0;
+}
+
+.student-album .list-item .mask {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -60px;
+  background-color: rgba(00, 00, 00, .5);
+  text-align: center;
+  color: #fff;
+  transition: bottom .4s ease-in-out;
+}
+
+.student-album .list-item:hover .mask {
+  bottom: 0;
+}

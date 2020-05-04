@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>template-render</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <div class="cover">
+    <div class="student-album">
+      <div class="album-title">
+        <h1>Young strong China strong</h1>
+        <p>Beautiful people, excellent tech</p>
+      </div>
+      <div class="album-wrap">
+        <ul class="list J_list clearfix">
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="J_data" style="display: none;">
+    [{"id":"1","career":"\u524d\u7aef\u5de5\u7a0b\u5e08","city":"\u5317\u4eac","salary":"15","img":"1.jpg"},{"id":"2","career":"\u524d\u7aef\u5de5\u7a0b\u5e08","city":"\u5e7f\u5dde","salary":"11","img":"2.jpg"},{"id":"3","career":"\u524d\u7aef\u5de5\u7a0b\u5e08","city":"\u4e0a\u6d77","salary":"10","img":"3.jpg"},{"id":"4","career":"\u524d\u7aef\u5de5\u7a0b\u5e08","city":"\u6210\u90fd","salary":"9","img":"4.jpg"},{"id":"5","career":"\u540e\u7aef\u5de5\u7a0b\u5e08","city":"\u5317\u4eac","salary":"11","img":"5.jpg"},{"id":"6","career":"\u524d\u7aef\u5de5\u7a0b\u5e08","city":"\u5317\u4eac","salary":"13","img":"6.jpg"},{"id":"7","career":"\u524d\u7aef\u5de5\u7a0b\u5e08","city":"\u6df1\u5733","salary":"12","img":"7.jpg"},{"id":"8","career":"\u524d\u7aef\u5de5\u7a0b\u5e08","city":"\u4e0a\u6d77","salary":"10","img":"8.jpg"},{"id":"9","career":"\u540e\u7aef\u5de5\u7a0b\u5e08","city":"\u6210\u90fd","salary":"10","img":"9.jpg"},{"id":"10","career":"\u524d\u7aef\u5de5\u7a0b\u5e08","city":"\u5317\u4eac","salary":"18","img":"10.jpg"}]
+  </div>
+  <script type="text/javascript" src="./js/index.js"></script>
+  <script type="text/html" id="J_tpl">
+    <li class="list-item">
+      <div class="mask">
+        <h3>{{career}}({{city}})</h3>
+        <p>salary {{salary}}</p>
+      </div>
+      <img src="image/guys/{{img}}" alt="No. 1 Guru">
+    </li>
+  </script>
+</body>
+
+</html>
